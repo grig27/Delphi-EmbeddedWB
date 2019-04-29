@@ -35,11 +35,13 @@ program prjSDIDemo;
 
 uses
   Forms,
-  frmMain in 'frmMain.pas' {Form1};
+  frmMain in 'frmMain.pas' {Form1},
+  csWebBrowserTools in '..\..\..\..\..\..\..\csCommon10\csWebBrowserTools.pas';
 
 {$R *.res}
 
 begin
+  embeddedWebbrowserMode(False, iemIE8);
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.Run;

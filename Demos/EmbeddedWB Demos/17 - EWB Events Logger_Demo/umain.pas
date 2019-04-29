@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Classes, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, OleCtrls, SHDocVw_EWB, EwbCore, ActiveX, EmbeddedWB,
   IEAddress, ComObj, URLMon, EwbAcc, CheckLst, ComCtrls, Buttons, ToolWin,
-  ImgList;
+  ImgList, System.ImageList;
 
 type
   TForm1 = class(TForm)

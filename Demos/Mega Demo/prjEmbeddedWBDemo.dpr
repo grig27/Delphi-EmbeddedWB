@@ -9,7 +9,7 @@
 //***************************************************************
 {LICENSE:
 THIS SOFTWARE IS PROVIDED TO YOU "AS IS" WITHOUT WARRANTY OF ANY KIND,
-EITHER EXPRESSED OR IMPLIED INCLUDING BUT NOT LIMITED TO THE APPLIED
+EITHER EXPRESSED OR IMPLIED INCLUDING BUT NOT LIMITED TO- THE APPLIED
 WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
 YOU ASSUME THE ENTIRE RISK AS TO THE ACCURACY AND THE USE OF THE SOFTWARE
 AND ALL OTHER RISK ARISING OUT OF THE USE OR PERFORMANCE OF THIS SOFTWARE
@@ -33,11 +33,13 @@ program prjEmbeddedWBDemo;
 
 uses
   Forms,
-  Demo in 'Demo.pas' {Form1};
+  Demo in 'Demo.pas' {Form1},
+  csWebBrowserTools;
 
 {$R *.res}
 
 begin
+  csWebBrowserTools.embeddedWebbrowserMode(true, iemIE10);
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
   Application.Run;

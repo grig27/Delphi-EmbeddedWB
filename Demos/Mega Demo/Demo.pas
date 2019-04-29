@@ -41,7 +41,7 @@ uses
   sysUtils, Windows, FavMenu, ImportFavorites, ExportFavorites, Clipbrd,
   HistoryMenu, HistoryListView, FavoritesTree, FavoritesListView, EmbeddedWB,
   IEAddress, LinksBar, IEDownload, RichEditBrowser, ExtDlgs, SHDocVw_EWB,
-  EwbCore, IEDownloadTools, WinSock;
+  EwbCore, IEDownloadTools, WinSock, System.ImageList;
 
 type
   TfrmMain = class(TForm)
