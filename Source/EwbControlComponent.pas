@@ -155,8 +155,8 @@ type
 {$IFDEF Enable_InternetFeatures}
     FInternetFeatures: TInternetFeatures;
     procedure SetInternetFeatures(const Value: TInternetFeatures);
-    function DesignMode: Boolean;
 {$ENDIF}
+    function DesignMode: Boolean;
     // procedure DoMessage(var Msg: TMsg; var Handled: Boolean);
   protected
     { Protected declarations }
@@ -254,6 +254,8 @@ begin
     FMessageHandler.FOnMessage := DoMessage; }
 end;
 
+
+
 function TEwbControl.DesignMode: Boolean;
 begin
   Result := (csDesigning in ComponentState);
@@ -266,6 +268,7 @@ begin
   // FDesignMode := (csDesigning in ComponentState);
 
   FMouseWheelFix := TMouseWheelFix.Create;
+
   FMouseWheelFix.FDesignMode := DesignMode;
   FMouseWheelFix.Active := True;
 

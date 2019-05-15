@@ -361,7 +361,7 @@ implementation
 uses
   System.Win.Registry, ShellAPI, Controls, Messages, Forms, SysUtils,
   OleCtrls, WinInet, SendMail_For_EWB, System.Win.ComObj, EWB.IEConst, IniFiles,
-  JPEG, WinSock,
+  Vcl.Imaging.JPEG, WinSock,
   Wcrypt2, Browse4Folder, EWBCoreTools;
 
 type

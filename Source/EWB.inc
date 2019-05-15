@@ -55,16 +55,16 @@ You may use, change or modify the component under 4 conditions:
 {$DEFINE USE_EwbTools}
 
 // Enable Subclassing of TEmbeddedWB Child windows (focus issues, ActiveControl, TAB and ActiveControl)
-{$DEFINE Enable_SubClassChildWindows}
+{.$DEFINE Enable_SubClassChildWindows}
 
 // Enable Mouse Hook to catch WM_MOUSEWHEEL and set Focus on TEmbeddedWB while not active
-{$DEFINE Enable_AutoMouseWheelFix}
+{.$DEFINE Enable_AutoMouseWheelFix}
 
 // Enable FocusControl to catch CM_ACTIVATE (EWB focus issue when switching back to the application)
-{$DEFINE Enable_AutoFocusControl}
+{.$DEFINE Enable_AutoFocusControl}
 
 // Enable FormWndProc "Hooking" to handle Dialog Boxes / Popups
-{$DEFINE Enable_HookParentFormWndProc}
+{.$DEFINE Enable_HookParentFormWndProc}
 
 
 // ** Deactivated by default:
@@ -74,7 +74,7 @@ You may use, change or modify the component under 4 conditions:
 {.$DEFINE USE_EwbDDE}
 
 // Enable MSHTML events (MSHTMLEvents.pas)
-{.$DEFINE Enable_EwbMSHTMLEvents}
+{$DEFINE Enable_EwbMSHTMLEvents}
 
 // Enable Mouse (OnEnter, OnLeave) Events  in TEmbeddedWB (D5, D6, D7 only)
 {.$DEFINE Enable_MouseEnterLeaveEvents}
@@ -100,7 +100,7 @@ You may use, change or modify the component under 4 conditions:
 //---- TEwbControl (EwbControlComponent.pas)-------------------------------
 
   // Enable Property InternetFeatures in the Object Inspector.
-  {$DEFINE Enable_InternetFeatures}
+  {.$DEFINE Enable_InternetFeatures}
 
 //-------------------------------------------------------------------------
 

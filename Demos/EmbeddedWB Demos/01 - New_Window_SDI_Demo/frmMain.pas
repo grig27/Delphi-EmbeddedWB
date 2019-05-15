@@ -79,7 +79,7 @@ end;
 
 procedure TForm1.FormShow(Sender: TObject);
 begin
-  btnGoClick(nil);
+  //btnGoClick(nil);
 end;
 
 {

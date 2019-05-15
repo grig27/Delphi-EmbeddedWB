@@ -1,9 +1,9 @@
 object Form1: TForm1
   Left = 276
   Top = 220
-  Width = 899
-  Height = 698
   Caption = 'TEmbeddedWB - SDI Demo'
+  ClientHeight = 653
+  ClientWidth = 881
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,17 +14,17 @@ object Form1: TForm1
   Position = poScreenCenter
   Scaled = False
   OnShow = FormShow
-  PixelsPerInch = 96
+  PixelsPerInch = 120
   TextHeight = 13
   object pnlAddressBar: TPanel
     Left = 0
     Top = 0
-    Width = 891
+    Width = 881
     Height = 41
     Align = alTop
     TabOrder = 0
     DesignSize = (
-      891
+      881
       41)
     object btnGo: TButton
       Left = 833
@@ -46,7 +46,6 @@ object Form1: TForm1
       EmbeddedWB = EmbeddedWB1
       IconLeft = 4
       IconTop = 3
-      ItemHeight = 16
       ParentBiDiMode = True
       ShowFavicon = True
       TabOrder = 1
@@ -59,26 +58,23 @@ object Form1: TForm1
   object EmbeddedWB1: TEmbeddedWB
     Left = 0
     Top = 91
-    Width = 891
-    Height = 554
+    Width = 881
+    Height = 543
     Align = alClient
     TabOrder = 1
+    Silent = False
     OnStatusTextChange = EmbeddedWB1StatusTextChange
     OnNewWindow2 = EmbeddedWB1NewWindow2
     OnNewWindow3 = EmbeddedWB1NewWindow3
     DisableCtrlShortcuts = 'N'
     UserInterfaceOptions = [EnablesFormsAutoComplete, EnableThemes]
     About = ' EmbeddedWB http://bsalsa.com/'
-    PrintOptions.Margins.Left = 19.05
-    PrintOptions.Margins.Right = 19.05
-    PrintOptions.Margins.Top = 19.05
-    PrintOptions.Margins.Bottom = 19.05
-    PrintOptions.Header = '&w&bSeite &p von &P'
     PrintOptions.HTMLHeader.Strings = (
       '<HTML></HTML>')
-    PrintOptions.Footer = '&u&b&d'
     PrintOptions.Orientation = poPortrait
     UserAgent = 'Mozilla/4.0(Compatible-EmbeddedWB 14.56 http://bsalsa.com/ '
+    ExplicitWidth = 891
+    ExplicitHeight = 554
     ControlData = {
       4C000000163A0000B12400000000000000000000000000000000000000000000
       000000004C000000000000000000000001000000E0D057007335CF11AE690800
@@ -88,16 +84,15 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 645
-    Width = 891
+    Top = 634
+    Width = 881
     Height = 19
     Panels = <>
-    SimplePanel = False
   end
   object Panel1: TPanel
     Left = 0
     Top = 41
-    Width = 891
+    Width = 881
     Height = 50
     Align = alTop
     TabOrder = 3

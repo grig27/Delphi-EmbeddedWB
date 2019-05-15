@@ -41,7 +41,7 @@ uses
 {$R *.res}
 
 begin
-  embeddedWebbrowserMode(False, iemIE8);
+  embeddedWebbrowserMode(False, iemIE10);
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.Run;
